@@ -50,6 +50,10 @@ GitHub Actions
 - Auditable workflow runs
 - Scheduled security scans
 
+### CI Job Isolation & Tool Availability
+
+An initial CI run failed because test and lint jobs executed in isolated runners without installed dependencies, causing `jest` and `eslint` to be unavailable. This was resolved by executing dependency installation within each job using a reusable workflow, ensuring tools were available in the execution environment.
+
 ---
 
 ## ✅ Conclusion
