@@ -8,39 +8,16 @@ permissions:
   contents: read
 
 jobs:
-  install:
-    uses: ./.github/workflows/reusable-install.yml
-
   test:
-    needs: install
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/reusable-install.yml
     strategy:
       matrix:
         node-version: [18.x, 20.x]
       fail-fast: false
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - name: Run tests
-        run: npm test
+    with:
+      node-version: ${{ matrix.node-version }}
 
   lint:
-    needs: install
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
-
-      - name: Run ESLint
-        run: npm run lint
+    uses: ./.github/workflows/reusable-install.yml
+    with:
+      node-version: 18
