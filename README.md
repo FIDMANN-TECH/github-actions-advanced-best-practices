@@ -60,12 +60,15 @@ An initial CI run failed because test and lint jobs executed in isolated runners
 This project demonstrates advanced GitHub Actions workflow engineering with a strong focus on **maintainability, performance, modularity, and security**, aligning with industry best practices.
 
 ## Below are screenshots of workflow:
-![version-control](./img/01_node_npm_version.png)
-![npm-installation](./img/02_npm_init_dev_deps.png)
-![local-test](./img/03_local_tests_pass.png)
-![ci-pipeline-failed](./img/04_ci-failure-lockfile-mismatch.png)
-![ci-failed-missing-dev-tool](./img/05_ci_failure_missing_dev_tools.png)
+![node_npm_version](./img/01_node_npm_version.png)
+![npm-init-dev-deps](./img/02_npm_init_dev_deps.png)
+![local-local-tests-pass](./img/03_local_tests_pass.png)
+![ci-failure-lockfile-mismatch](./img/04_ci-failure-lockfile-mismatch.png)
+![ci-failure-missing-dev-tool](./img/05_ci_failure_missing_dev_tools.png)
 ![ci-pipeline-success](./img/06_ci_pipeline_success.png)
 ![ci-lint-success](./img/07_ci_lint_success.png)
-![matrix-tests-success](./img/08_ci_matrix_tests_success.png)
-![repo-project-structure](./img/09_project_structure.jpeg)
+![ci-matrix-test-success](./img/08_ci_matrix_tests_success.png)
+![cache-hit](./img/09_cache_hit.png)
+![pull-request-security-workflow-trigger](./img/10_pr_security_workflow_trigger.png)
+![reusable-workflow-in-use](./img/11_reusable_workflow_in_use.png)
+![security-scan-success](./img/12_security_scan_success.png)
