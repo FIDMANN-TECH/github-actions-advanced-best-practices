@@ -58,3 +58,14 @@ An initial CI run failed because test and lint jobs executed in isolated runners
 
 ## ✅ Conclusion
 This project demonstrates advanced GitHub Actions workflow engineering with a strong focus on **maintainability, performance, modularity, and security**, aligning with industry best practices.
+
+## Below are screenshots of workflow:
+![version-control](./img/01_node_npm_version.png)
+![npm-installation](./img/02_npm_init_dev_deps.png)
+![local-test](./img/03_local_tests_pass.png)
+![ci-pipeline-failed](./img/04_ci-failure-lockfile-mismatch.png)
+![ci-failed-missing-dev-tool](./img/05_ci_failure_missing_dev_tools.png)
+![ci-pipeline-success](./img/06_ci_pipeline_success.png)
+![ci-lint-success](./img/07_ci_lint_success.png)
+![matrix-tests-success](./img/08_ci_matrix_tests_success.png)
+![repo-project-structure](./img/09_project_structure.jpeg)
